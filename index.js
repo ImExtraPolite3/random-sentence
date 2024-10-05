@@ -24,6 +24,7 @@ const wordsForSentence = [
   ],
   ['yet', 'but', 'though', 'and', 'however'],
   [
+    '',
     'fiercely',
     'deeply',
     'surprisingly',
@@ -57,3 +58,16 @@ const wordsForSentence = [
     'persuaded',
   ],
 ];
+
+function displayOriginalSentence() {
+  const words = document.querySelectorAll('.word');
+
+  for (let i = 0; i < wordsForSentence.length; i++) {
+    words[i].textContent =
+      wordsForSentence[i][
+        Math.floor(Math.random() * wordsForSentence[i].length)
+      ];
+  }
+}
+
+displayOriginalSentence();
