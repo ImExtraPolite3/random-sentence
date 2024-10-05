@@ -6,12 +6,12 @@
 
 #sentence {
   height: 400px;
-  animation: upanddown 10000ms infinite forwards;
 }
 
 .word {
   font-size: 2rem;
   cursor: pointer;
+  display: inline-block;
 }
 
 @keyframes upanddown {
