@@ -70,4 +70,26 @@ function displayOriginalSentence() {
   }
 }
 
+function changeIndividualWords() {
+  const words = document.querySelectorAll('.word');
+
+  words.forEach((word, index) => {
+    word.dataset.index = index;
+  });
+
+  words.forEach((word) => {
+    word.addEventListener('click', () => {
+      if (wordsForSentence[word.dataset.index]) {
+        words[word.dataset.index].textContent =
+          wordsForSentence[word.dataset.index][
+            Math.floor(
+              Math.random() * wordsForSentence[word.dataset.index].length
+            )
+          ];
+      }
+    });
+  });
+}
+
 displayOriginalSentence();
+changeIndividualWords();
