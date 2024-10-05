@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#sentence {
+  height: 400px;
+  animation: upanddown 10000ms infinite forwards;
+}
+
+.word {
+  font-size: 2rem;
+}
+
+@keyframes upanddown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(400px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
