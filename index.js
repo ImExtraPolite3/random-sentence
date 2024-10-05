@@ -24,7 +24,6 @@ const wordsForSentence = [
   ],
   ['yet', 'but', 'though', 'and', 'however'],
   [
-    '',
     'fiercely',
     'deeply',
     'surprisingly',
@@ -96,7 +95,7 @@ function applyAnimation() {
 
   words.forEach((word) => {
     const duration = Math.floor(Math.random() * 5000) + 10000;
-    word.style.animation = `upanddown ${duration}ms infinite`;
+    word.style.animation = `upanddown ${duration}ms infinite linear`;
   });
 }
 
