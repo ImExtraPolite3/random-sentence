@@ -91,5 +91,15 @@ function changeIndividualWords() {
   });
 }
 
+function applyAnimation() {
+  const words = document.querySelectorAll('.word');
+
+  words.forEach((word) => {
+    const duration = Math.floor(Math.random() * 5000) + 10000;
+    word.style.animation = `upanddown ${duration}ms infinite`;
+  });
+}
+
 displayOriginalSentence();
 changeIndividualWords();
+applyAnimation();
