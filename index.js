@@ -78,14 +78,12 @@ function changeIndividualWords() {
 
   words.forEach((word) => {
     word.addEventListener('click', () => {
-      if (wordsForSentence[word.dataset.index]) {
-        words[word.dataset.index].textContent =
-          wordsForSentence[word.dataset.index][
-            Math.floor(
-              Math.random() * wordsForSentence[word.dataset.index].length
-            )
-          ];
-      }
+      words[word.dataset.index].textContent =
+        wordsForSentence[word.dataset.index][
+          Math.floor(
+            Math.random() * wordsForSentence[word.dataset.index].length
+          )
+        ];
     });
   });
 }
