@@ -1,1 +1,1 @@
-# random-sentence
+# sentence-shuffle
