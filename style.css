@@ -24,7 +24,7 @@
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 750px) {
   #sentence {
     gap: 10px;
   }
@@ -34,7 +34,7 @@
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1050px) {
   #sentence {
     gap: 20px;
   }
@@ -44,7 +44,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1350px) {
   #sentence {
     gap: 20px;
   }
