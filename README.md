@@ -19,4 +19,4 @@ Languages: HTML, CSS, JavaScript
 
 **Live Demo:**
 
-<a href="">Not complete yet</a>
+<a href="https://imextrapolite3.github.io/sentence-shuffle/">Link to live demo</a>
