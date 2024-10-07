@@ -58,6 +58,25 @@ const wordsForSentence = [
   ],
 ];
 
+const hex = [
+  '0',
+  '1',
+  '2',
+  '3',
+  '4',
+  '5',
+  '6',
+  '7',
+  '8',
+  '9',
+  'A',
+  'B',
+  'C',
+  'D',
+  'E',
+  'F',
+];
+
 function displayOriginalSentence() {
   const words = document.querySelectorAll('.word');
 
@@ -86,6 +105,20 @@ function changeIndividualWords() {
         ];
     });
   });
+}
+
+function changeColor() {
+  let randomColor = '';
+  let charIndex;
+
+  for (let i = 0; i < 6; i++) {
+    for (let j = 0; j < hex.length; j++) {
+      charIndex = Math.floor(Math.random() * j);
+    }
+    randomColor = randomColor + hex[charIndex];
+  }
+
+  return randomColor;
 }
 
 function applyAnimation() {
