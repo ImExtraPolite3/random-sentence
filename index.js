@@ -85,6 +85,8 @@ function displayOriginalSentence() {
       wordsForSentence[i][
         Math.floor(Math.random() * wordsForSentence[i].length)
       ];
+
+    words[i].style.color = changeColor();
   }
 }
 
@@ -103,12 +105,14 @@ function changeIndividualWords() {
             Math.random() * wordsForSentence[word.dataset.index].length
           )
         ];
+
+      words[word.dataset.index].style.color = changeColor();
     });
   });
 }
 
 function changeColor() {
-  let randomColor = '';
+  let randomColor = '#';
   let charIndex;
 
   for (let i = 0; i < 6; i++) {
