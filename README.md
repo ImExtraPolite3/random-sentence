@@ -9,14 +9,14 @@ Sites used as reference:
 <br>
 <a href="https://taper.badquar.to/12/to-do.html">To Do</a>
 
-Features
+**Features**
 
 I made use of animations in order to make the words in the sentence look as if they are falling in an infinite loop. Allow user to click on different words in order to change them.
 
-Technologies Used:
+**Technologies Used:**
 
 Languages: HTML, CSS, JavaScript
 
-Live Demo:
+**Live Demo:**
 
 <a href="">Not complete yet</a>
